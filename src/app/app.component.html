@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogwarts</title>
+  <link rel="stylesheet" href="app.component.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title-box">
+        <h1>Hogwarts</h1>
+        <div class="yellow-rectangle"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="box teachers">
+        <h2>Teachers</h2>
+        <div class="card" *ngFor="let teacher of teachers">
+          <div class="info">
+            <p class="name">{{ teacher.firstName }} {{ teacher.lastName }}</p>
+            <p class="description">{{ teacher.description }}</p>
+          </div>
+          <div class="date"><p class="arrivalDate"><i class="fa fa-calendar"></i> {{ teacher.arrivalDate }}</p></div>
+          <div class="badge {{ teacher.assignment }}">{{ teacher.assignment }}</div>
+        </div>
+      </div>
+      <div class="box students">
+        <h2>Students</h2>
+        <div class="boxs">
+        <div class="card" *ngFor="let student of students">
+          <div class="info">
+            <p class="name">{{ student.firstName }} {{ student.lastName }}</p>
+            <p class="description">{{ student.description }}</p>
+          </div>
+          <div class="date"><p class="arrivalDate"><i class="fa fa-calendar"></i> {{ student.arrivalDate }}</p></div>
+          <div class="badge {{ student.house }}">{{ student.house }}</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

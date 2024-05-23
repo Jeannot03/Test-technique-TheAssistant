@@ -1,0 +1,161 @@
+body {
+  font-family: 'Lato';
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 58px;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.title-box {
+  display: inline-block;
+  position: relative;
+}
+
+.title-box h1 {
+  font-family: 'Orelega One', cursive;
+  font-size: 28px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  line-height: 30.53px;
+  letter-spacing: 0.36000001430511475px;
+  text-align: left;
+}
+
+.yellow-rectangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: #FED510;
+  z-index: 0;
+  width: 127px;
+  height: 14px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 58%;
+}
+
+.teachers, .students {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.boxs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--light-tint, #F2F2F2);
+  padding: 14px 14px 14px 23px;
+  box-shadow: 0px 4px 10px 0px #0000001A;
+  justify-content: space-between;
+  position: relative;
+  width: 323px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .name {
+  font-family: 'Lato';
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.40799999237060547px;
+  text-align: left; 
+}
+
+.card .description {
+  font-family: 'Lato';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.40799999237060547px;
+  text-align: left;
+  white-space: pre-line;
+}
+
+.card .arrivalDate {
+  font-family: 'Lato';
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.06599999964237213px;
+  text-align: left;
+  color: #484848;
+  margin: 0px;
+}
+
+.card .badge {
+  color: #F1F1F1;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 91px;
+  padding: 3px 0px 4px 0px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.06599999964237213px;
+  text-align: center;
+}
+
+.card .badge.Transfiguration { background-color: #E9131F; }
+.card .badge.Charms { background-color: #1D79CD; }
+.card .badge.Herbology { background-color: #C7B514; }
+.card .badge.Potions { background-color: #18A874; }
+.card .badge.Gryffindor { background-color: #E9131F; }
+.card .badge.Slytherin { background-color: #18A874; }
+.card .badge.Ravenclaw { background-color: #1D79CD; }
+.card .badge.Hufflepuff { background-color: #C7B514; }
+
+.card .info p {
+  margin: 0;
+}
+
+.card .info p:last-child {
+  margin-bottom: 0;
+}
+
+.teachers h2, .students h2 {
+  width: 254px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.3799999952316284px;
+  text-align: left;
+  height: 24px;
+}
+
+.fa-calendar {
+  margin-right: 5px;
+}
